@@ -15,20 +15,20 @@ export default function Navbarr() {
       style={{ zIndex: 1000, position: "sticky", top: 0 }}
     >
       <NavbarBrand>
-        // <Image src="/logo.png" alt="Logo" width={60} height={60} />{" "}
-        <p className="font-bold font-lexend text-white tracking-wide text-lg ">
-          Fundr
+        <Image src="/logo.png" alt="Logo" width={50} height={50} />{" "}
+        <p className="font-bold font-lexend ml-1 text-white tracking-wide text-lg ">
+          Fundline
         </p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link className="text-white" href="#">
-            Products
+            Startup
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
           <Link href="#" className="text-white" aria-current="page">
-            Pricing
+            Investor
           </Link>
         </NavbarItem>
       </NavbarContent>

@@ -11,7 +11,7 @@ export default function Sidebar() {
         {/* Logo */}
         <div className="mb-8">
           <p className="text-2xl font-bold tracking-wide text-white mb-4">
-            Fundhive
+            Fundline
           </p>
         </div>
 

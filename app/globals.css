@@ -95,7 +95,7 @@
   background-attachment: fixed; /* Fix the background */
 }
 .sidebar {
-  background: radial-gradient(circle at 50% -20%, #000000, #06162e);
+  background: radial-gradient(circle at 50% -20%, #000000, #06132e);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

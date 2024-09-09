@@ -7,7 +7,8 @@ import Timeline from "@/components/ui/timeline";
 import GrowthCharts from "@/components/Charts/GrowthCharts";
 import { PerformanceMetrics } from "@/components/Charts/PerformanceMetrics";
 import { UnitEconomics } from "@/components/Charts/UnitEconomics";
-
+import { EquityDilution } from "@/components/Charts/EquityDilution";
+import { ARRChart } from "../Charts/ARR";
 export default function TimelineData() {
   const params = useParams();
   const startup = params.startup; // Access the dynamic route parameter
@@ -153,8 +154,20 @@ export default function TimelineData() {
   data.push({
     title: "Financial Metrics",
     content: (
-      <div className="flex bg-gradient-to-b border-blue-900 border-opacity-45 bg-[#021526] flex-col p-6 rounded-lg shadow-md">
+      <div className="flex bg-gradient-to-b border-blue-900 border-opacity-45 bg-[#021526] flex-col p-6 rounded-lg shadow-md gap-6">
+        {/* Unit Economics Component */}
         <UnitEconomics />
+        {/* ARR Growth Chart */}
+        <ARRChart />
+      </div>
+    ),
+  });
+  data.push({
+    title: "Equity Dilution",
+    content: (
+      <div className="flex bg-gradient-to-b border-blue-900 border-opacity-45 bg-[#021526] flex-col p-6 rounded-lg shadow-md gap-6">
+        {/* Equity Dilution Chart */}
+        <EquityDilution />
       </div>
     ),
   });

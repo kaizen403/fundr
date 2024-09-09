@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Brand and Description */}
         <div className="flex flex-col items-center md:items-start">
-          <p className="text-2xl font-bold">Fundr</p>
+          <p className="text-2xl font-bold">Fundline</p>
           <p className="text-gray-400 mt-2 text-center md:text-left">
             Connecting startups, investors, and VCs in a collaborative
             ecosystem.
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-8 text-center text-gray-400">
-        <p>&copy; 2024 Fundr. All rights reserved.</p>
+        <p>&copy; 2024 Fundline. All rights reserved.</p>
       </div>
     </footer>
   );

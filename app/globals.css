@@ -67,18 +67,39 @@
     @apply bg-background text-foreground;
   }
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 .image-container {
   min-width: 700px;
 }
 /* globals.css */
 /* globals.css */
-
-.hero-background {
-  background: radial-gradient(circle at 50% -20%, #000000, #06162e);
-  background-size: cover;
+.onboardcard {
+  height: 100vh;
+}
+.onboardbg {
+  background: radial-gradient(circle at 50% -20%, #000000, #06162e, #06162e);
+  margin-top: 2vh; /* Resetting any top margin */
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh; /* Makes sure it takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: 0;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+}
+
+.hero-background {
+  background: radial-gradient(circle at 50% -20%, #000000, #06162e, #06162e);
+
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   color: white;
@@ -89,10 +110,8 @@
 }
 .dashboardbg {
   background: radial-gradient(circle at 50% -20%, #000000, #06162e);
-  background-size: cover;
-  background-position: center;
+  width: 95%;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Fix the background */
 }
 .sidebar {
   background: radial-gradient(circle at 50% -20%, #000000, #06132e);

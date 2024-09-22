@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useParams } from "next/navigation";
-import { startupData } from "@/contexts/startupContext";
+import { startupData } from "@/constants/startupContext";
 import Timeline from "@/components/ui/timeline";
 import GrowthCharts from "@/components/Charts/GrowthCharts";
 import { PerformanceMetrics } from "@/components/Charts/PerformanceMetrics";

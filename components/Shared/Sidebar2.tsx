@@ -1,19 +1,17 @@
-// Sidebar.tsx
 "use client";
+import { Link } from "@nextui-org/link";
 
 import { useRecoilState } from "recoil";
-import { selectedSidebarOptionState } from "../../contexts/sidebaratom"; // Import your atom
-import { Link } from "@nextui-org/link";
-import { FaSearch, FaFolder, FaBell, FaCog } from "react-icons/fa";
-import { sidebarOptions } from "../../constants/sidebarOptions"; // Adjust the path as needed
+import { selectedSidebar2OptionState } from "../../contexts/sidebar2Atom"; // Adjust the atom import as needed
+import { sidebarOptions } from "../../constants/sidebar2Options"; // Adjust the path as needed
 
-export default function Sidebar() {
+export default function Sidebar2() {
   const [selectedOption, setSelectedOption] = useRecoilState(
-    selectedSidebarOptionState,
+    selectedSidebar2OptionState,
   );
 
   const handleOptionClick = (optionName: string) => {
-    setSelectedOption(optionName);
+    setSelectedOption(optionName); // Update Recoil state with selected option
   };
 
   return (

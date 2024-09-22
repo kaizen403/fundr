@@ -1,4 +1,5 @@
 "use client"; // Ensure this directive is only in client components
+import RecoilRootWrapper from "@/wrappers/RecoilRootWrapper";
 
 import type { Metadata } from "next";
 import "../globals.css";
@@ -21,26 +22,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${lexend.className} bg-black`}>
-        <Providers>
-          <div className="flex flex-col min-h-screen">
-            <Navbarr /> {/* Dashboard-specific navbar */}
-            <div className="flex flex-grow">
-              {/* Dynamically loaded Sidebar */}
-              <div className="w-72 flex-shrink-0">
-                <DynamicSidebar />
-              </div>
-              {/* Main content area with dashboard background */}
-              <main className="flex-grow p-6">
-                <div className="dashboardbg h-full w-full rounded-lg p-3">
-                  <div className="h-full overflow-y-auto">{children}</div>
+    <RecoilRootWrapper>
+      <html lang="en">
+        <body className={`${lexend.className} bg-black`}>
+          <Providers>
+            <div className="flex flex-col min-h-screen">
+              <Navbarr /> {/* Dashboard-specific navbar */}
+              <div className="flex flex-grow">
+                {/* Dynamically loaded Sidebar */}
+                <div className="w-72 flex-shrink-0">
+                  <DynamicSidebar />
                 </div>
-              </main>
+                {/* Main content area with dashboard background */}
+                <main className="flex-grow p-6 mr-16">
+                  <div className="dashboardbg h-full w-full rounded-lg p-3">
+                    <div className="h-full overflow-y-auto">{children}</div>
+                  </div>
+                </main>
+              </div>
             </div>
-          </div>
-        </Providers>
-      </body>
-    </html>
+          </Providers>
+        </body>
+      </html>
+    </RecoilRootWrapper>
   );
 }

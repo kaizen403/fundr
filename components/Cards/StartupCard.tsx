@@ -36,9 +36,9 @@ export default function StartupCard({
   };
 
   return (
-    <div className="relative bg-gradient-to-b from-[#03346E] via-[#050b2b] to-[#021526] rounded-lg shadow-lg p-4 sm:p-6 w-full max-w-lg h-auto flex flex-col border border-[#03346E] border-opacity-50 overflow-hidden">
+    <div className="relative bg-[#021526] rounded-lg shadow-lg p-4 sm:p-6 w-full max-w-lg h-auto flex flex-col border border-[#03346E] border-opacity-50 overflow-hidden">
       {/* Meteors Effect */}
-      <Meteors number={14} />
+      <Meteors number={8} />
 
       <div className="flex flex-wrap sm:flex-nowrap relative z-10">
         {/* Logo with Zoom Effect */}

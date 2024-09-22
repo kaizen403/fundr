@@ -4,7 +4,7 @@ import FeaturesSection from "./FeaturesSection";
 import Title from "./Title";
 import PlatformStats from "./Metrics";
 import { MarqueeDemo } from "./Review";
-
+import FundingHero from "./FundingHero";
 export default function Hero() {
   return (
     <div className="flex justify-center items-center pb-18 pt-12">
@@ -16,20 +16,10 @@ export default function Hero() {
         <div className="flex justify-center mt-8">
           <MarqueeDemo />
         </div>
-        <div className="flex justify-center mt-8">
-          <Cards />
+        <div className="flex justify center mt-10 w-full h-full">
+          <FundingHero />
         </div>
-        <FeaturesSection />
-
         {/* SVG Image */}
-        <div className="flex justify-center mt-8">
-          <Image
-            src="/transpirant.svg"
-            alt="Decorative transparent SVG"
-            width={1100}
-            height={1000}
-          />
-        </div>
       </div>
     </div>
   );

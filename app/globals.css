@@ -95,6 +95,17 @@ body {
   justify-content: center; /* Centers content vertically */
 }
 
+.hero-background2 {
+  background: radial-gradient(circle at 50% 0%, #000000, #06162e, #000000);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: 0;
+}
+
 .hero-background {
   background: radial-gradient(circle at 50% -20%, #000000, #06162e, #06162e);
 

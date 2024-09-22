@@ -1,11 +1,11 @@
 // states/onboardingSelectors.ts
 import { selector } from "recoil";
-import { onboardingStepState } from "./onboardingAtom";
+import { currentStepState } from "./onboardingAtom"; // Correct path
 
 export const onboardingComponentSelector = selector({
   key: "onboardingComponentSelector",
   get: ({ get }) => {
-    const step = get(onboardingStepState);
+    const step = get(currentStepState);
 
     switch (step) {
       case "Login":

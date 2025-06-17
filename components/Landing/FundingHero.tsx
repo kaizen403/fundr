@@ -13,7 +13,7 @@ export default function Component() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#021526] to-[#050b2b] flex flex-col justify-center items-center p-4">
-      <div className="w-full max-w-6xl relative">
+      <div className="w-full max-w-6xl relative flex flex-col items-center">
         {/* Top Section */}
         <motion.div className="text-center mb-12" {...fadeInUp}>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text gradient-text">
@@ -26,7 +26,7 @@ export default function Component() {
         </motion.div>
         {/* Left Section */}
         <motion.div
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1/4"
+          className="md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2 md:w-1/4 w-full mb-8 md:mb-0"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -46,7 +46,7 @@ export default function Component() {
         </motion.div>
         {/* Right Section */}
         <motion.div
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/4"
+          className="md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:w-1/4 w-full mb-8 md:mb-0"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -66,7 +66,7 @@ export default function Component() {
         </motion.div>
         {/* Center Section (SVG Placeholder) */}
         <motion.div
-          className="w-1/2 h-64 mx-auto my-12 flex items-center justify-center"
+          className="w-full md:w-1/2 h-48 md:h-64 mx-auto my-12 flex items-center justify-center"
           whileHover={{ scale: 1.2 }} // Zoom effect on hover
           transition={{ duration: 0.5 }} // Smooth transition
         >
@@ -75,7 +75,7 @@ export default function Component() {
             alt="Transpirant SVG"
             width={700} // Set appropriate width
             height={700} // Set appropriate height
-            className="object-contain"
+            className="object-contain w-full h-full"
           />
         </motion.div>{" "}
         {/* Bottom Section */}

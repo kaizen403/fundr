@@ -7,8 +7,8 @@ import { MarqueeDemo } from "./Review";
 import FundingHero from "./FundingHero";
 export default function Hero() {
   return (
-    <div className="flex justify-center items-center pb-18 pt-12">
-      <div className="hero-background py-12 px-8 rounded-lg shadow-lg w-5/6 text-center">
+    <div className="flex justify-center items-center pb-18 pt-12 px-4">
+      <div className="hero-background py-12 px-8 rounded-lg shadow-lg w-full sm:w-5/6 text-center">
         <Title />
 
         <PlatformStats />

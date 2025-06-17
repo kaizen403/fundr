@@ -1,4 +1,4 @@
-"s-1-proxmuse client";
+"use client";
 
 import { Link } from "@nextui-org/link";
 
